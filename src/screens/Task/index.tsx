@@ -40,8 +40,10 @@ const Task = ({ navigation }: TaskProps): JSX.Element => {
   };
 
   useEffect(() => {
-    handleRetriveAllTasks();
-  }, []);
+    navigation.addListener('focus', () => {
+      handleRetriveAllTasks();
+    });
+  }, [navigation]);
 
   const handleTaskFindById = async (id: string) => {
     setLoading(true);
@@ -66,7 +68,7 @@ const Task = ({ navigation }: TaskProps): JSX.Element => {
 
     if (response.status === 200 || response.status === 201 || response.status === 204) {
       const newResponse: any = tasksList.filter((item: any) => item.id !== id);
-      setTaskData(newResponse);
+      setTasksList(newResponse);
       activeToast("success", "Deu tudo certo!", "Atividade foi excluída com sucesso.");
       setOpenModal(false);
       setLoading(false);
