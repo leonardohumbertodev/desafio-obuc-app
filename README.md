@@ -1,4 +1,4 @@
-## Description
+## Descrição
 
 Projeto feito em React Native Expo para funcionando tanto para web e mobile.
 
@@ -15,10 +15,9 @@ $ npm install
 Para rodar o aplicativo localmente, utilize o comando:
 
 ```bash
-# development
 $ npx expo start
 ```
 
-## Aplicação web deploy vercel
+## Deploy vercel
 
 [Desafio Obuc](https://desafio-obuc-app.vercel.app)
