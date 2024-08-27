@@ -1,6 +1,6 @@
 ## Descrição
 
-Projeto feito em React Native Expo para funcionando tanto para web e mobile.
+Projeto desenvolvido com React Native Expo, compatível com plataformas web e mobile.
 
 ## Instalação
 
@@ -18,6 +18,6 @@ Para rodar o aplicativo localmente, utilize o comando:
 $ npx expo start
 ```
 
-## Deploy vercel
+## Deploy Vercel
 
 [Desafio Obuc](https://desafio-obuc-app.vercel.app)
